@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>yolov8_pkg</name>
+  <name>ros1_yolov8</name>
   <version>0.0.0</version>
-  <description>The yolov8_pkg package</description>
+  <description>The ros1_yolov8 package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
