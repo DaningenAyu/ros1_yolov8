@@ -17,8 +17,8 @@ class YOLOv8_detect():
         rospy.init_node('detectYOLOv8n',anonymous=True)#ノードを立てる
         self.bridge = CvBridge()
         #Realsenseのカラー画像の情報取得(topicを取得)
-        #rospy.Subscriber('/camera/color/image_raw',Image,self.img_listener)
-        rospy.Subscriber('/usb_cam/image_raw',Image,self.img_listener)
+        rospy.Subscriber('/camera/color/image_raw',Image,self.img_listener)
+        #rospy.Subscriber('/usb_cam/image_raw',Image,self.img_listener)
         self.pub = rospy.Publisher('yolov8/BoundingBox',BoundingBox,queue_size=10)
 
 
