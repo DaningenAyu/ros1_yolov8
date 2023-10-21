@@ -13,7 +13,7 @@ class YOLOv8_detect():
     #初期設定
     def __init__(self):
         self.model = YOLO("yolov8n.pt")
-        #self.model = YOLO("paper_bag_last.pt")
+        #self.model = YOLO("https://github.com/DaningenAyu/ros1_yolov8/model/paper_bag_last.pt")   #modelのある場所なので使うときは変更すること
         rospy.init_node('detectYOLOv8n',anonymous=True)#ノードを立てる
         self.bridge = CvBridge()
         #Realsenseのカラー画像の情報取得(topicを取得)
